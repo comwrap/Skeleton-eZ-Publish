@@ -1,0 +1,28 @@
+.button {
+
+	display: inline-block;
+	margin: 0 0 $gutter/2;
+	padding: .8em 2em;
+	background: color('primary');
+	color: color('white');
+	line-height: 1em;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 600;
+	cursor: pointer;
+	user-select: none;
+	transition: background $duration $timing;
+	border: 0;
+	border-radius: 0;
+	vertical-align: middle;
+
+	&:hover {
+		background: lighten(color('primary'), 5%);
+	}
+
+	&:active {
+		transition: none;
+		background: darken(color('primary'), 5%);
+	}
+
+}

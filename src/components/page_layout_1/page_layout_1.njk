@@ -1,0 +1,13 @@
+{# Header goes here #}
+
+<div class="section">
+	<div class="row">
+		<div class="column" data-ez-zone-id="{{ zones[0].id }}">
+			{{ zone1 | safe }}
+		</div>
+	</div>
+</div>
+
+{% inject "cookie/cookie.njk", cookie %}
+
+{# Footer goes here #}
